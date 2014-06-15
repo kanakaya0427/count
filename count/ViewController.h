@@ -16,5 +16,6 @@
 -(IBAction)purasu;
 -(IBAction)mainasu;
 
+//KJKJKJKJKJKJKJKJKJJKJKJKKKKJKKKJKKJKKJKJKJKJKJKKJ
 
 @end
