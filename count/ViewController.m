@@ -8,11 +8,24 @@
 
 #import "ViewController.h"
 
+
+
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+-(IBAction)purasu{
+    number=number+1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+}
+
+-(IBAction)mainasu{
+    number=number-1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+}
 
 - (void)viewDidLoad
 {

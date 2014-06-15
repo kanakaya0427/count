@@ -1,23 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ズムサタ.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q7T-wv-Bnp"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqr-Jp-Ivs">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-1f-lQN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="KP3-Tf-OCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="0.89499830160000005" green="0.0" blue="0.67868036870000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh8-Dy-zh0">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purasu" destination="2" eventType="touchUpInside" id="SFY-1o-qvW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shF-l1-DTc">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainasu" destination="2" eventType="touchUpInside" id="Wdz-x3-qnm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="shF-l1-DTc" firstAttribute="baseline" secondItem="zh8-Dy-zh0" secondAttribute="baseline" type="default" id="CdO-aw-eCt"/>
+                            <constraint firstItem="yqr-Jp-Ivs" firstAttribute="top" secondItem="wqU-1f-lQN" secondAttribute="top" type="default" id="Dea-QI-tEF"/>
+                            <constraint firstItem="yqr-Jp-Ivs" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="133" id="EKE-LT-9U4"/>
+                            <constraint firstItem="yqr-Jp-Ivs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="109" id="KgO-Ll-g7v"/>
+                            <constraint firstItem="zh8-Dy-zh0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="MZY-9X-xwN"/>
+                            <constraint firstAttribute="trailing" secondItem="shF-l1-DTc" secondAttribute="trailing" constant="86" id="Wq5-6e-w62"/>
+                            <constraint firstItem="Q7T-wv-Bnp" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="a1l-DA-mo1"/>
+                            <constraint firstItem="wqU-1f-lQN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="128" id="fHR-bl-qFw"/>
+                            <constraint firstItem="zh8-Dy-zh0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="88" id="nB5-zQ-Cuq"/>
+                            <constraint firstItem="Q7T-wv-Bnp" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="q49-Yt-ovs"/>
+                            <constraint firstItem="Q7T-wv-Bnp" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qBg-Xv-E1s"/>
+                            <constraint firstItem="Q7T-wv-Bnp" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vhr-x7-hGc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="wqU-1f-lQN" id="jdv-2s-5IF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ズムサタ.jpg" width="294" height="294"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
